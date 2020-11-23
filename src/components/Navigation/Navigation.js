@@ -3,9 +3,9 @@ import './Navigation.css'
 
 
 
-const Navigation = ({open}) =>{
+const Navigation = ({open ,onRouteChange}) =>{
 	return(
-			<nav className='nav-bar '>
+			<nav className='nav-bar o-90'>
 				<div className='nav-icon' onClick ={open}>
 					<i className="material-icons">menu</i>
 				</div>
@@ -15,8 +15,8 @@ const Navigation = ({open}) =>{
 				<div className='nav-space' />
 				<div className='nav-items'>
 					<ul className='f3'>
-						<li>HOME</li>
-						<li>ABOUT</li>
+						<li onClick={() => onRouteChange('home')}>HOME</li>
+						<li onClick={() => onRouteChange('about')}>ABOUT</li>
 						<li>CURRENT</li>
 						<li>COMPLETED</li>
 						<li>TENDERS</li>

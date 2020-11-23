@@ -2,7 +2,7 @@ import React from 'react';
 import './SideNavbar.css';
 
 
-const SideNavbar = ({close,sideBarOpen}) => {
+const SideNavbar = ({close,sideBarOpen,onRouteChange}) => {
 	let Classes = 'side-nav-bar';
 	if(sideBarOpen){
 		Classes = 'side-nav-bar open'
@@ -13,8 +13,8 @@ const SideNavbar = ({close,sideBarOpen}) => {
 				<li onClick = { close}>
 					<i className="material-icons">close</i>
 				</li>
-				<li>HOME</li>
-				<li>ABOUT
+				<li onClick={() => onRouteChange('home')}>HOME</li>
+				<li onClick={() => onRouteChange('about')}>ABOUT
 					
 				</li>
 				<li>CURRENT</li>
