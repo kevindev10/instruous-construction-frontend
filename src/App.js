@@ -1,25 +1,64 @@
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
+import Navigation from './components/Navigation/Navigation';
+import SideNavbar from './components/SideNavbar/SideNavbar';
+import BackDrop from './components/BackDrop/BackDrop';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'tachyons';
+
+class App extends Component {
+  constructor(){
+    super()
+    this.state={
+        sideBarOpen: false
+    }
+  }
+
+
+  handleSidebarOpen = () =>{
+    this.setState({sideBarOpen:true})
+  }
+
+  handleSidebarClose = () =>{
+    this.setState({sideBarOpen:false})
+  }
+
+
+  render(){
+     return (
+      <div className="center">
+         <Navigation open ={this.handleSidebarOpen}/>
+          {this.state.sideBarOpen 
+              ? (
+                  <div>
+                    <BackDrop close={this.handleSidebarClose}/>
+                  </div>
+                )
+              : null
+
+          }
+        <SideNavbar close={this.handleSidebarClose} sideBarOpen ={this.state.sideBarOpen}/>
+         
+         <div>
+           <h1 style ={{marginTop:'160px', marginLeft:'9px'}}>Hello React Devs...</h1>
+         </div>
+              
+      </div>
+      );
+  }
+ 
 }
 
 export default App;
+
+
+/*
+  
+    <Banner/>
+    <MissionStatement/>
+    <Projects/>
+    <MottoContactUs/>
+    <Footer/>
+  */
+
+
