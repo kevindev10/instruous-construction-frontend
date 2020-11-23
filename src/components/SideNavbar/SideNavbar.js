@@ -14,7 +14,9 @@ const SideNavbar = ({close,sideBarOpen}) => {
 					<i className="material-icons">close</i>
 				</li>
 				<li>HOME</li>
-				<li>ABOUT</li>
+				<li>ABOUT
+					
+				</li>
 				<li>CURRENT</li>
 				<li>COMPLETED</li>
 				<li>TENDERS</li>

@@ -32,13 +32,11 @@
 
 }
 
-
-
-/*.material-icons{
-	font-size: 60px
-}*/
-
 @media (min-width:703px){
 	.nav-icon{display: none;}
 }
+
+
+/*///////////////////////////////// */
+
 

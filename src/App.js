@@ -51,12 +51,23 @@ class App extends Component {
 export default App;
 
 /*
-  
+    PART OF HOME
     <Banner/>
     <MissionStatement/>
     <Projects/>
     <MottoContactUs/>
     <Footer/>
+
+    OTHER COMPONENTS
+    <About/>
+    <Current/>
+    <Completed/>
+    <Tenders/>
+    <Careers/>
+    <Contact/>
+
+
+
   */
 
 
