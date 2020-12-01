@@ -3,8 +3,8 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import SideNavbar from './components/SideNavbar/SideNavbar';
 import BackDrop from './components/BackDrop/BackDrop';
-import Banner from './components/Banner/Banner';
 import About from './components/About/About';
+import Home from './components/Home/Home'; 
 
 import 'tachyons';
 
@@ -43,12 +43,13 @@ class App extends Component {
               : null
 
           }
-        <SideNavbar close={this.handleSidebarClose} sideBarOpen ={this.state.sideBarOpen} onRouteChange ={this.onRouteChange}/>
+        <SideNavbar close={this.handleSidebarClose} sideBarOpen ={this.state.sideBarOpen} onRouteChange ={this.onRouteChange}/>          
         {this.state.route ==='home'
-          ? <Banner/>
+          ? <Home/>
           : <About/>
 
         }
+        
          
          {
           /*

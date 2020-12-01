@@ -1,3 +1,43 @@
 .spacer{
+
+}
+
+.banner{
+	object-fit: cover;
+  
+}
+
+
+@media (min-width:703px){
+
+	.banner{
+		margin-top:-150px;
+	}
+	
+}
+
+
+
+@media(max-width:702px) {
+    .spacer{
+		top:0;
+		left:0;
+		margin-top:0px !important;
+		width:100%;
+		background-color:black;
+		height: 150px;
+	}
+	.banner{
+		width: 100%;
+		height: 275px !important;
+	}
+}
+
+
+
+
+
+
+.space{
 	margin-top: 150px;
 }
