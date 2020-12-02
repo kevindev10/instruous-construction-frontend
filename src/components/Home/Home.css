@@ -32,18 +32,30 @@
 	.project--links .btn.btn--link {
 	    
 	    width: 100% !important;
- 
-	}
+ 	}
 	.projects-desktop{
 		display: none;
 	}
 	.projects-mobile{
-	display: flex;
-	flex-direction: column;
-	align-items:  center;
+		display: flex;
+		flex-direction: column;
+		align-items:  center;
 
 	}
+	.bottom-banner{
+		font-size: 17px !important;
+
+	}
+	.banner-bottom-main{
+		padding-top:  0px !important;
+
+
+	}
+	
+
 }
+
+
 
 .bolded{
 	font-weight: bold;
