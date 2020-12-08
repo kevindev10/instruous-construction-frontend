@@ -1,0 +1,7 @@
+
+@media(max-width:702px) {
+    .servicesDiagram{
+    	width: 98% !important;
+    	height: auto;
+    }
+}

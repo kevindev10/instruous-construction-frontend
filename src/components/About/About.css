@@ -13,6 +13,10 @@
 	.banner{
 		margin-top:-150px;
 	}
+	.youtube-main{
+		
+		margin-left: 30px ;
+	}
 	
 }
 
@@ -31,6 +35,42 @@
 		width: 100%;
 		height: 275px !important;
 	}
+	.bottom-banner{
+		font-size: 17px !important;
+
+	}
+	.banner-bottom-main{
+		padding-top:  0px !important;
+
+
+	}
+	.youtube-main{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.youtube{
+
+		width:350px ;
+		height:250px !important;
+		
+	}
+}
+
+
+
+
+.home-about-link-main{
+	display: flex;
+	margin-left: 30px;
+
+}
+
+.home-about-link{
+	font-weight: bold;
+	padding:5px;
+	
+
 }
 
 
@@ -38,6 +78,4 @@
 
 
 
-.space{
-	margin-top: 150px;
-}
+

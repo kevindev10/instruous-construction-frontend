@@ -91,6 +91,9 @@
 		width: 210px;
   		height: 190px !important;
 	}
+	.dropbtn{
+		font-size: 17px ;
+	}
 	
 }
 

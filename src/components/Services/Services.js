@@ -1,58 +1,34 @@
 import React from 'react';
-import './About.css';
+import './Services.css';
 import banner from './banner.jpg';
+import servicesDiagram from './servicesDiagram.jpg';
 import master from './master.jpeg';
 import iso from './iso.jpg';
 
 
-const About = ({onRouteChange}) => {
+const Services = ({onRouteChange}) => {
 	return(
-		<div>
+		<div className=''>
 			<div>
 				<div className ='spacer '></div>
 				<img style={{'width':'100%','height':'800px'}}className ='banner' src ={banner} alt=''/>
 			</div>
+			
 			<div className='home-about-link-main'>
 				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('home')}>Home</p>
 				<p className='f3 home-about-link'>/</p>
 				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('about')}>About</p>
+				<p className='f3 home-about-link'>/</p>
+				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('services')}>Services</p>
 			</div>
 			<div>
-				<p className='f1 ml4 mt0 mb3 fw6'>ABOUT </p>
-				<div className=' youtube-main mb0 '>
-					<iframe title="sample youtube video" className='youtube 'width="630" height="370"
-						src="https://www.youtube.com/embed/5Peo-ivmupE">
-					</iframe>
-				</div>
-
+				<p className='f1 ml4 mt0 mb3 fw6'> SERVICES </p>
+				<p className='f3 ml4 mt0 mb3 fw6'>COMMERCIAL CONSTRUCTION SERVICES</p>
+				<p className='f4 ml4 mt0 mb3  athelas'>We make a promise, to not only finish your project on time and on budget, but to realise its full potential.</p>
 			</div>
-			<div className=' ml4 mt0'>
-
-				<p className='f3 athelas'>
-					          
-					INSTRUOUS CONSTRUCTION COMPANY <br/><br/><br/>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-					Excepteur sint occaecat cupidatat non proident, 
-					sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><br/>
-
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-					sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-					qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-					 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-					  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-					vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br/><br/><br/><br/>
-
-					
-				</p>
+			<div>
+				<img className='center servicesDiagram' style={{'width':'75%','height':'auto'}} src ={servicesDiagram} alt=''/>				
 			</div>
-
-
 			<div className=''>
 
 				<section className="ph1 ph1-ns pv5 banner-bottom-main ">
@@ -117,8 +93,11 @@ const About = ({onRouteChange}) => {
 			</div>
 
 
+
 		</div>
+		
+
 		
 	)
 }
- export default About;
+ export default Services;

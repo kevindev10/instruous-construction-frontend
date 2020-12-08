@@ -1,11 +1,13 @@
 import React from 'react';
-import './About.css';
 import banner from './banner.jpg';
+import QualityPolicy from './Quality-Policy.pdf';
+import OccupationalHealthandSafetyPolicy from './Occupational-Health-and-Safety-Policy.pdf';
+import EnvironmentalPolicy1 from './Environmental-Policy-1.pdf';
+import FitnessforWorkPolicy1 from './Fitness-for-Work-Policy-1.pdf';
 import master from './master.jpeg';
 import iso from './iso.jpg';
 
-
-const About = ({onRouteChange}) => {
+const Hseq = ({onRouteChange}) => {
 	return(
 		<div>
 			<div>
@@ -16,45 +18,52 @@ const About = ({onRouteChange}) => {
 				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('home')}>Home</p>
 				<p className='f3 home-about-link'>/</p>
 				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('about')}>About</p>
+				<p className='f3 home-about-link'>/</p>
+				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('hseq')}>Hseq</p>
 			</div>
 			<div>
-				<p className='f1 ml4 mt0 mb3 fw6'>ABOUT </p>
-				<div className=' youtube-main mb0 '>
-					<iframe title="sample youtube video" className='youtube 'width="630" height="370"
-						src="https://www.youtube.com/embed/5Peo-ivmupE">
-					</iframe>
-				</div>
-
+				<p className='f1 ml4 mt0 mb3 fw6'>HSEQ</p>
 			</div>
-			<div className=' ml4 mt0'>
-
-				<p className='f3 athelas'>
-					          
-					INSTRUOUS CONSTRUCTION COMPANY <br/><br/><br/>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-					Excepteur sint occaecat cupidatat non proident, 
-					sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><br/>
-
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-					sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-					qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-					 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-					  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-					vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br/><br/><br/><br/>
-
-					
-				</p>
+			<div className='ml4 athelas'>
+				<h2>HEALTH & SAFETY</h2>
+				<p className='f3'>It is impossible to find two words more important to us than Health and Safety. 
+				We have an immense responsibility to our staff <br/> and subcontractors in making sure
+				 they go home safely every single day. There is no objective or goal more important 
+				 an the safety<br/>of our people.</p><br/>
+				<h2>QUALITY</h2>
+				<p className='f3'>Our INSTRUOUS Integrated Management System, which not only encompasses HSEQ, but all
+				 aspects of our business operations,<br/> ensures we implement industry-leading practices. 
+				 Our large-scale buying power and nimble, accountable team gives us tight <br/>control
+				  over quality in our products and our processes.</p><br/>
+				<h2>ENVIRONMENT & SUSTAINABILITY</h2>
+				<p className='f3'>At INSTRUOUS, we believe that complying with applicable environmental legislation is just the
+				 beginning. We have a responsibility to the <br/> community to proactively identify environmental
+				  risks and prevent pollution where possible. We have an ongoing commitment to <br/> divert more
+				   than 90% of waste generated through our activities from landfill.</p><br/>
 			</div>
 
+			<div className='f3 ml4 athelas'>
+				<p className='fw6 underline'>Our Health, Safety, Environment, & Quality Policies</p>
+				<ul>
+					<li >
+						<a href = {QualityPolicy} target = "_blank" rel="noopener noreferrer" className='no-underline link black dim'>Quality Policy</a>
+					</li>
+					<li>
+						<a href = {OccupationalHealthandSafetyPolicy} target = "_blank" rel="noopener noreferrer" className='no-underline link black dim'>Occupational Health and Safety Policy</a>
+						
+					</li>
+					<li>
+						<a href = {EnvironmentalPolicy1} target = "_blank" rel="noopener noreferrer" className='no-underline link black dim'>Environmental Policy</a>
+						
+					</li>
+					<li>
+						<a href = {FitnessforWorkPolicy1} target = "_blank" rel="noopener noreferrer" className='no-underline link black dim'>Fitness for Work Policy</a>
+						
+					</li>
+				</ul>
+			</div>
 
-			<div className=''>
-
+			<div>
 				<section className="ph1 ph1-ns pv5 banner-bottom-main ">
 					  <article className=" center br2  bg-black-80">
 					    <div className=" dt--fixed-ns w-100">
@@ -113,12 +122,11 @@ const About = ({onRouteChange}) => {
 					</div>
 				
 			    </div>
-
 			</div>
-
-
 		</div>
+		
+
 		
 	)
 }
- export default About;
+ export default Hseq;

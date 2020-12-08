@@ -38,7 +38,7 @@ const SideNavbar = ({close,sideBarOpen,onRouteChange}) => {
 				
 				
 				<div className='dropdown'>
-					<li  onclick="myFunction()" className='f5 dropbtn'>ABOUT </li>
+					<li  onclick="myFunction()" className=' dropbtn'>ABOUT </li>
 						<div id='myDropdown' className="dropdown-content ">
 							<p onClick={() => onRouteChange('about')}>About</p>
 					        <p onClick={() => onRouteChange('services')}>Services</p>
@@ -52,41 +52,38 @@ const SideNavbar = ({close,sideBarOpen,onRouteChange}) => {
 				
 
 				 <div className='dropdown'>
-				 	<li onclick="myFunction()" className='f5 dropbtn'>CURRENT</li>
+				 	<li onclick="myFunction()" className=' dropbtn'>CURRENT</li>
 				 		<div id='myDropdown' className="dropdown-content ">
-							<p onClick={() => onRouteChange('about')}>About</p>
-					        <p onClick={() => onRouteChange('services')}>Services</p>
-					        <p onClick={() => onRouteChange('ourpeople')}>Our People</p>
-					        <p onClick={() => onRouteChange('awards')}>Awards</p>
-					        <p onClick={() => onRouteChange('hseq')}>HSEQ</p>
-					        <p onClick={() => onRouteChange('ourvalues')}>Our Values</p>
-					        <p onClick={() => onRouteChange('csr')}>CSR</p>
+							<p onClick={() => onRouteChange('current')}>Current</p>
+					        <p onClick={() => onRouteChange('currentone')}>Current one</p>
+					        <p onClick={() => onRouteChange('currenttwo')}>Current two</p>
+					        
 					     </div>
 				 </div>
 
 				 <div className='dropdown'>
-				 	<li onclick="myFunction()" className='f5 dropbtn'>COMPLETED</li>
+				 	<li onclick="myFunction()" className=' dropbtn'>COMPLETED</li>
 				 		<div id='myDropdown' className="dropdown-content ">
-							<p onClick={() => onRouteChange('about')}>About</p>
-					        <p onClick={() => onRouteChange('services')}>Services</p>
-					        <p onClick={() => onRouteChange('ourpeople')}>Our People</p>
-					        <p onClick={() => onRouteChange('awards')}>Awards</p>
-					        <p onClick={() => onRouteChange('hseq')}>HSEQ</p>
-					        <p onClick={() => onRouteChange('ourvalues')}>Our Values</p>
-					        <p onClick={() => onRouteChange('csr')}>CSR</p>
+							<p onClick={() => onRouteChange('completed')}>Completed</p>
+					        <p onClick={() => onRouteChange('completedone')}>Completed one</p>
+					        <p onClick={() => onRouteChange('completedtwo')}>Completed two</p>
+					        <p onClick={() => onRouteChange('completedthree')}>Completed three</p>
+					        <p onClick={() => onRouteChange('completedfour')}>Completed four</p>
+					        <p onClick={() => onRouteChange('completedfive')}>Completed five</p>
+					        
 					     </div>
 				 </div>
 
 				<div>
-					<li className='f5 dropbtn' onClick={() => onRouteChange('home')}>TENDERS</li>
+					<li className=' dropbtn' onClick={() => onRouteChange('tenders')}>TENDERS</li>
 				</div>
 
 				<div>
-					<li className='f5 dropbtn' onClick={() => onRouteChange('home')}>CAREERS</li>
+					<li className='dropbtn' onClick={() => onRouteChange('careers')}>CAREERS</li>
 				</div>
 
 				 <div>
-					<li className='f5 dropbtn' onClick={() => onRouteChange('home')}>CONTACT</li>
+					<li className='dropbtn' onClick={() => onRouteChange('contact')}>CONTACT</li>
 				</div>
 				
 				

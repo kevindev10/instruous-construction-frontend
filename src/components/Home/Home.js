@@ -14,20 +14,20 @@ const Home = () => {
 				<div className ='spacer '></div>
 				<img className ='banner' src ={banner} alt=''/>
 			</div>
-			<p className='tc f3 bolded '>
+			<p className='tc f3  athelas '>
 						IT STARTS WITH INSTRUOUS CONSTRUCTION.<br/><br/>
 				THE WORLD'S LEADING COMMERCIAL CONSTRUCTION COMPANY <br/><br/>
 				Building this potential is made possible by our unique approach where we apply all the responsiveness,<br/> 
 				accountability and agility usually only found in much smaller companies, <br/>
 				together with being backed by the large-scale efficiencies, <br/>
-				strength and financial security of the ABN Group.<br/><br/>
+				strength and financial security of the XYZ Group.<br/><br/>
 
 				In every project, we challenge ourselves to achieve industry best practice outcomes.<br/>
 				Let’s talk about the potential of your next construction project today.<br/>
 			</p>
 			<div className='center project--links'>
 				<p className="btn btn--link center f4  ">UNDER CONSTRUCTION  </p>
-				<p className="btn btn--link center f4">COMPLETED  </p>
+				<p className="btn btn--link center f4 ">COMPLETED  </p>
 			</div>
 
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import './About.css';
 import banner from './banner.jpg';
 import master from './master.jpeg';
 import iso from './iso.jpg';
 
-
-const About = ({onRouteChange}) => {
+const Ourvalues = ({onRouteChange}) => {
 	return(
 		<div>
 			<div>
@@ -16,45 +14,47 @@ const About = ({onRouteChange}) => {
 				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('home')}>Home</p>
 				<p className='f3 home-about-link'>/</p>
 				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('about')}>About</p>
+				<p className='f3 home-about-link'>/</p>
+				<p className='grow link f3 home-about-link pointer' onClick={()=>onRouteChange('ourvalues')}>Our Values</p>
 			</div>
 			<div>
-				<p className='f1 ml4 mt0 mb3 fw6'>ABOUT </p>
-				<div className=' youtube-main mb0 '>
-					<iframe title="sample youtube video" className='youtube 'width="630" height="370"
-						src="https://www.youtube.com/embed/5Peo-ivmupE">
-					</iframe>
-				</div>
-
+				<p className='f1 ml4 mt0 mb3 fw6'>OUR VALUES</p>
 			</div>
-			<div className=' ml4 mt0'>
-
-				<p className='f3 athelas'>
-					          
-					INSTRUOUS CONSTRUCTION COMPANY <br/><br/><br/>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-					Excepteur sint occaecat cupidatat non proident, 
-					sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><br/>
-
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-					sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-					qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-					 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-					  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-					vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br/><br/><br/><br/>
-
-					
-				</p>
+			<div className='ml4 athelas'>
+				<h2>WHAT WE STAND FOR</h2>
+				<p className='i f3 mv4 fw8'>“We are driven to be better in everything we do.”</p>
+				<p className='f3'>We appreciate you may have seen numerous ‘Our Values’ 
+				pages. Yet for us, these aren’t simply words on a page. They’re common<br/> 
+				threads that unite everyone on our team and are the shared ground from 
+				which we build trusting relationships with our clients.</p><br/>
+				<h2>AUTHENTIC</h2>
+				<p className='f3'>Authentic, honest conversations occur naturally with 
+				our clients because we believe the greatest success is found in
+				collaboration<br/> and accountability. We do what we say we will, which leads
+				 to the kind of trust that achieves world-class outcomes.</p><br/>
+				<h2>LEADERSHIP</h2>
+				<p className='f3'>It’s said that true leadership isn’t about wanting to
+				 be a leader; it’s about wanting to make a difference. Empowering others to <br/> come together and make an impact is what leadership means to us.</p><br/>
+				<h2>RELENTLESS</h2>
+				<p className='f3'>Overcoming the many challenges that arise in 
+				construction isn’t a matter of luck. It’s about being relentless and
+				 knowing deep <br/> down that the most breathtaking results are often born
+				 out of the hardest situations</p><br/>
+				<h2>EXCELLENCE</h2>
+				<p className='f3'>We’re yet to work with a client who believes that
+				close enough is good enough. Industry best developments require a certain <br/> standard of excellence, and it’s this shared belief that realises the potential of every project.</p><br/>
+				<h2>PASSION</h2>
+				<p className='f3'>Knowledge may be the vehicle, but it’s passion that
+				 drives it. When you absolutely love what you do, it’s second nature to go the <br/> extra mile, think outside the box and fine-tune processes long after the others may have gone home.</p><br/>
+				<h2>FUN</h2>
+				<p className='f3'>We love hearing a client tell us that working together was 
+				really enjoyable. It’s impossible to deliver a great project without having<br/>
+				 some fun – it boosts morale,
+				 strengthens relationships and makes the journey even more worthwhile..</p><br/>
+				
 			</div>
 
-
-			<div className=''>
-
+			<div>
 				<section className="ph1 ph1-ns pv5 banner-bottom-main ">
 					  <article className=" center br2  bg-black-80">
 					    <div className=" dt--fixed-ns w-100">
@@ -113,12 +113,11 @@ const About = ({onRouteChange}) => {
 					</div>
 				
 			    </div>
-
 			</div>
-
-
 		</div>
+		
+
 		
 	)
 }
- export default About;
+ export default Ourvalues;
